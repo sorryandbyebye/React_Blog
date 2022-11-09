@@ -1,0 +1,16 @@
+@font-face {
+  font-family: 'iconfont';
+  /* Project id 3016910 */
+  src: url('//at.alicdn.com/t/font_3016910_52649tqfqrt.woff2?t=1641218695539') format('woff2'),
+    url('//at.alicdn.com/t/font_3016910_52649tqfqrt.woff?t=1641218695539') format('woff'),
+    url('//at.alicdn.com/t/font_3016910_52649tqfqrt.ttf?t=1641218695539') format('truetype');
+}
+
+.iconfont {
+  font-family: "iconfont" !important;
+  font-style: normal;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* popover组件的css */
