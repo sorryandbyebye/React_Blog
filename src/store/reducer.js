@@ -32,7 +32,7 @@ export default (state = defaultState, action) => {
     case 'setPicLike':
       newState.picLike = action.value
       break
-    case 'addpicLike':
+    case 'addpicLike':  //尽量要纯函数
       if (!newState.picLike.includes(action.value)) {
         newState.picLike.push(action.value)
       }
