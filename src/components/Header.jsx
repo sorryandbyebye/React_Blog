@@ -22,32 +22,52 @@ function Header(props) {
   const items = [
     {
       label: (
-        <div>0.0's blog</div>
+        <div>0.0</div>
       ),
       key: 'Warning'
     },
     {
-      label: '首页',
+      label: (
+        <div>
+          <HomeOutlined className='title' />
+          首页
+        </div>
+      ),
       key: 'Home',
-      icon: <HomeOutlined />,
+      // icon: <HomeOutlined />,
     },
     {
-      label: '前端学习路线',
+      label: (
+        <div >
+          <NodeIndexOutlined className='title' />
+          学习路线
+        </div>
+      ),
       key: 'Study',
-      icon: <NodeIndexOutlined />,
+      // icon: <NodeIndexOutlined />,
     },
     {
-      label: '有生之年知识分享',
+      label: (
+        <div >
+          <ShareAltOutlined className='title' />
+          知识分享
+        </div>
+      ),
       key: 'Share',
-      icon: <ShareAltOutlined />,
+      // icon: <ShareAltOutlined />,
     },
     {
       // label: (
       //   <Link to='/Aboutme'>Aboutme</Link>
       // ),
-      label: 'Aboutme',
+      label: (
+        <div >
+          <UserOutlined className='title' />
+          Aboutme
+        </div>
+      ),
       key: 'Aboutme',
-      icon: <UserOutlined />,
+      // icon: <UserOutlined />,
     },
     {
       label: (
@@ -56,11 +76,6 @@ function Header(props) {
             function () {
               if (props.isAuthenticated) {
                 return (
-                  // <div onClick={logout}>
-                  //   {props.user.name}
-                  //   <br />
-                  //   '(再次点击将退出)'
-                  // </div>
                   <div>
                     <Popconfirm placement="bottom" title={'是否退出登录？'} onConfirm={logout} okText="Yes" cancelText="No">
                       <div>{props.userName}</div>

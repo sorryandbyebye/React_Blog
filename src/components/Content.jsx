@@ -6,7 +6,8 @@ export default function Content(props) {
     <div id='content'>
       <div className='picture'><img src={require(`../asset/contentImg/${props.title[2]}.jpg`)} alt='pic'></img></div>
       <div className='title2'>{props.title[0]}</div>
-      <div className='introduce'><p>{props.title[1]}</p></div>
+      <div className='introduce'>{props.title[1]}</div>
+      {/* <div className="clearFloat"></div> */}
     </div>
   )
 }
