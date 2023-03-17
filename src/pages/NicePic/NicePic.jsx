@@ -212,7 +212,7 @@ function NicePic(props) {
     var arr = []
     // 距离左右边缘的距离固定，item的缝隙固定
     var gapToTop = 10 // 与顶部之间的距离，避免盒子重合
-    var gap = 20 // 上下间距
+    var gap = 10 // 上下间距
     var gapBetween = 10 // 左右item之间的距离
     var gapToSide = 10 // 到masonry左、右边缘的距离
     // var calcItemWidth = (this.$refs.pictest.clientWidth - 2 * gapToSide - (columns1 - 1) * gapBetween) / 4
