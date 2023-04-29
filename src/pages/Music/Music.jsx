@@ -32,6 +32,7 @@ export default function Music() {
         data = res.data
       })
     for (var i = 0; i <= data.length - 1; i++) {
+      // promise.all实现
       var detail = await musicRequest.get(`/song/detail?ids=${data[i].musicId}`)
       // console.log(detail);
       var musicSingle = await musicRequest.post(`/song/url?id=${data[i].musicId}`)

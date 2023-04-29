@@ -12,6 +12,8 @@ import Login from '../pages/Login.jsx'
 import Register from '../pages/Register.jsx'
 import Warning from '../pages/Warning.jsx'
 import MaskDetecttfjs from '../pages/MaskDetecttfjs/MaskDetecttfjs.jsx'
+import Handpose from '../pages/Handpose/Handpose.jsx'
+import Posenet from '../pages/Posenet/Posenet.jsx'
 // import Header from '../components/Header'
 import { BrowserRouter, Routes, Route } from 'react-router-dom'
 // import { Provider } from 'react-redux'
@@ -40,6 +42,10 @@ export default function BaseRouter() {
           <Route path="/Project/:id" element={<Project />}></Route>
         </Route>
         <Route path='/MaskDetecttfjs' element={<MaskDetecttfjs />}></Route>
+        <Route path='/Handpose' element={<Handpose />}></Route>
+        <Route path='/Posenet' element={<Posenet />}></Route>
+
+
       </Routes>
     </BrowserRouter>
 

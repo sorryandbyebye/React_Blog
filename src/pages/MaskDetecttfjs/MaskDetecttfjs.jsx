@@ -24,7 +24,7 @@ export default function MaskDetecttfjs() {
       //   n = 0
       //   runMask()
       // }
-    }, 10);
+    }, 100);
     // setTimeout(() => {
     //   clearTimer(timer)
     // }, 1000)
@@ -41,8 +41,8 @@ export default function MaskDetecttfjs() {
     ) {
       // Get Video Properties
       const video = webcamRef.current.video;
-      const videoWidth = webcamRef.current.video.videoWidth;
-      const videoHeight = webcamRef.current.video.videoHeight;
+      const videoWidth = video.videoWidth;
+      const videoHeight = video.videoHeight;
 
       // Set video width
       webcamRef.current.video.width = videoWidth;
@@ -72,7 +72,7 @@ export default function MaskDetecttfjs() {
   useEffect(() => {
     runMask()
   }, [runMask]);
-
+  // runMask()
   return (
     <div className="App">
       {/* <div><img ref={imgRef} src="./images/mask.jpg" alt="" /></div> */}

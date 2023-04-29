@@ -298,6 +298,7 @@ function NicePic(props) {
     setHasmore(true)
     getPic()
   }, [])
+  // 这里很奇怪，可以用websocket实现实时，或者写进content里
   useEffect(() => {
     // window.scrollTo(0, 0)
     if (!localStorage.getItem('picLike')) {
