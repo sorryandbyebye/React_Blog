@@ -36,8 +36,8 @@ export default function HumanModelPart(props) {
   let kp
   const group = useRef()
   const { nodes, materials } = useGLTF('./model.glb')
-  console.log(nodes.Ch36.skeleton.bones);
-  console.log(props.getJoints());
+  // console.log(nodes.Ch36.skeleton.bones);
+  // console.log(props.getJoints());
   nodes.Ch36.skeleton.bones[7].rotation.z = -Math.PI / 2
   nodes.Ch36.skeleton.bones[7].position.x = 6
   nodes.Ch36.skeleton.bones[7].position.z = 0

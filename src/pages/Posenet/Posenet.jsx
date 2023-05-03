@@ -2,6 +2,7 @@ import React, { Suspense } from 'react';
 import CameraPart from './component/Camera/CameraPart';
 import HumanModelPart from './component/ThreeModel/HumanModelPart';
 import { Canvas } from '@react-three/fiber';
+import LoadingModel from '../../components/LoadingModel';
 import { Leva, useControls } from 'leva';
 import { Perf } from 'r3f-perf'
 
@@ -63,7 +64,9 @@ function Posenet() {
 
             }}
           >
-            <Suspense fallback={null}>
+            <Suspense fallback={
+              <LoadingModel></LoadingModel>
+            }>
               <HumanModelPart getJoints={getJoints} ifMirror={ifMirror} />
             </Suspense>
           </Canvas>

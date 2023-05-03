@@ -1,5 +1,5 @@
 // Import dependencies
-import React, { useRef, useEffect } from "react";
+import React, { useRef } from "react";
 import * as tf from "@tensorflow/tfjs";
 import Webcam from "react-webcam";
 // import "./App.css";
@@ -63,15 +63,16 @@ export default function MaskDetecttfjs() {
       const ctx = canvasRef.current.getContext("2d");
       drawRect(obj, ctx);
 
-      obj.forEach((res) => {
-        res.dispose()
-      })
+      // obj.forEach((res) => {
+      //   res.dispose()
+      // })
     }
   };
   // eslint-disable-next-line
-  useEffect(() => {
-    runMask()
-  }, [runMask]);
+  // useEffect(() => {
+  //   runMask()
+  // }, [runMask]);
+  runMask()
   // runMask()
   return (
     <div className="App">

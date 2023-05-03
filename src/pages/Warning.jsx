@@ -16,9 +16,9 @@ export default function Warning() {
         <p><span>您好呀！接下来将前往一个神奇的领域！</span></p>
         <p><span>①用tensorflowjs实现口罩识别模型在网页上的使用。</span></p>
         <Button className='btnn' type='primary' onClick={() => goMytry('/MaskDetecttfjs')}>进去看看</Button>
-        <p><span>②用tensorflowjs实现人体姿势识别，<br></br>并用react-three/drei 、react-three/fiber实现识别出来的姿势和人体模型同步。</span></p>
+        <p><span>②用tensorflowjs实现人体姿势识别，<br></br>并用react-three/drei 、react-three/fiber实现识别出来的姿势和人体模型同步。（加载模型需要魔法）</span></p>
         <Button className='btnn' type='primary' onClick={() => goMytry('/Posenet')}>进去看看</Button>
-        <p><span>②用tensorflowjs实现手势识别，<br></br>并用react-three/drei 、react-three/fiber实现识别出来的姿势和手部模型同步（最好是测试左手）。</span></p>
+        <p><span>②用tensorflowjs实现手势识别，<br></br>并用react-three/drei 、react-three/fiber实现识别出来的姿势和手部模型同步（最好是测试左手，加载模型需要魔法）。</span></p>
         <Button className='btnn' type='primary' onClick={() => goMytry('/Handpose')}>进去看看</Button>
         <hr />
         <p><span>叠甲（免责/喷声明）</span></p>

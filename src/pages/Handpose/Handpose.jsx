@@ -3,6 +3,7 @@ import CameraPart from "./component/Camera/CameraPart";
 import HandModel from "./component/ThreeModel/HandModel";
 import { Canvas } from '@react-three/fiber';
 import { Leva, useControls } from 'leva';
+import LoadingModel from '../../components/LoadingModel';
 import { Perf } from 'r3f-perf'
 function Handpose() {
   const cameraSetting = {
@@ -50,7 +51,7 @@ function Handpose() {
 
           }}
         >
-          <Suspense fallback={null}>
+          <Suspense fallback={<LoadingModel />}>
             <HandModel getJoints={getJoints} />
           </Suspense>
         </Canvas>

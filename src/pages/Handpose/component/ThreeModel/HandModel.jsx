@@ -17,8 +17,8 @@ export default function HandModel(props) {
   let kp
   const group = useRef()
   const { nodes, materials } = useGLTF('/Rigged_Hand.glb')
-  console.log(nodes.Hand.skeleton);
-  console.log(props.getJoints());
+  // console.log(nodes.Hand.skeleton);
+  // console.log(props.getJoints());
   useFrame((state, delta) => {
     kp = props.getJoints()
     // console.log(kp);

@@ -7,7 +7,7 @@ const { Panel } = Collapse;
 export default function Daily() {
   const know = '分享些日常，或者学到的。偶尔更新'
   const onChange = (key) => {
-    console.log(key);
+    // console.log(key);
   };
   const [dailys, setDailys] = useState([])
   // 获取音乐函数
@@ -17,7 +17,7 @@ export default function Daily() {
       .then(res => {
         data = res.data
       })
-    console.log(data);
+    // console.log(data);
     setDailys(data.reverse())
     // setRefs(new Array(data.length))
   }

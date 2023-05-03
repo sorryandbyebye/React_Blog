@@ -10,8 +10,8 @@ const { TextArea } = Input
 function NicePic(props) {
   // 发送评论
   const senDiscuss = (e, picture, user) => {
-    console.log(picture);
-    console.log(user);
+    // console.log(picture);
+    // console.log(user);
     // 创建个结构体传数据
     const discussion = {
       id: '',
@@ -28,9 +28,9 @@ function NicePic(props) {
     // 把commentInfo插入到comment的前面
     discussion.comment.unshift(commentInfo)
     // picture.discuss.unshift(commentInfo)
-    console.log(discussion)
+    // console.log(discussion)
     axios.post('api/nicpic/uploadDiscuss', discussion)
-    console.log('传输了');
+    // console.log('传输了');
 
     //评论需要实时更新
   }
@@ -363,7 +363,7 @@ function NicePic(props) {
       if (arr.includes(allTweets[index]._id)) {
         let a = arr.indexOf(allTweets[index]._id)
         arr.splice(a, 1)
-        console.log(arr.length);
+        // console.log(arr.length);
         localStorage.setItem('picLike', JSON.stringify(arr))
       }
       if (localStorage.getItem('eleToken')) {
